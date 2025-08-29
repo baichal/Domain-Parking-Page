@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>域名停靠 - 联系我们</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <style>
+        /* 强制重置滚动位置 */
+        html, body {
+            scroll-behavior: auto !important;
+            overflow-anchor: none !important;
+            scroll-padding-top: 0 !important;
+            scroll-margin-top: 0 !important;
+        }
+        
+        /* 防止任何滚动记忆 */
+        * {
+            scroll-margin: 0 !important;
+            scroll-padding: 0 !important;
+            overflow-anchor: none !important;
+        }
+        
+        /* 强制页面从顶部开始 */
+        body {
+            position: relative;
+            top: 0 !important;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- 背景动画 -->
+        <div class="background-animation">
+            <div class="floating-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+                <div class="shape shape-4"></div>
+            </div>
+        </div>
+
+        <!-- 主要内容 -->
+        <main class="main-content">
+            <div class="logo-section">
+                <div class="logo-placeholder">
+                    <i class="fas fa-globe"></i>
+                </div>
+                <h1 class="domain-name">域名停靠页</h1>
+                <p class="tagline">优质域名，期待合作</p>
+            </div>
+
+            <div class="contact-section">
+                <div class="contact-card">
+                    <div class="card-header">
+                        <i class="fas fa-envelope"></i>
+                        <h2>联系我们</h2>
+                    </div>
+                    
+                    <div class="contact-info">
+                        <div class="email-section">
+                            <i class="fas fa-at"></i>
+                            <span class="label">联系邮箱：</span>
+                            <a href="mailto:itifl@qq.com" class="email-link">
+                                itifl@qq.com
+                            </a>
+                        </div>
+                        
+                        <div class="description">
+                            <p>如果您对该域名感兴趣，或有任何合作意向，</p>
+                            <p>欢迎通过邮箱与我们联系洽谈。</p>
+                        </div>
+                    </div>
+
+                    <div class="action-buttons">
+                        <button class="btn-primary" onclick="copyEmail()">
+                            <i class="fas fa-copy"></i>
+                            复制邮箱
+                        </button>
+                        <button class="btn-secondary" onclick="sendEmail()">
+                            <i class="fas fa-paper-plane"></i>
+                            发送邮件
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="features-section">
+                <div class="features-grid">
+                    <div class="feature-item">
+                        <i class="fas fa-shield-alt"></i>
+                        <h3>安全可靠</h3>
+                        <p>域名权属清晰，交易安全有保障</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-handshake"></i>
+                        <h3>诚信合作</h3>
+                        <p>秉持诚信原则，期待长期合作</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-rocket"></i>
+                        <h3>高效响应</h3>
+                        <p>24小时内回复您的咨询</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- 页脚 -->
+        <footer class="footer">
+            <p>&copy; 2024 域名停靠页. 保留所有权利.</p>
+        </footer>
+    </div>
+
+    <!-- 提示消息 -->
+    <div class="toast" id="toast">
+        <i class="fas fa-check-circle"></i>
+        <span>邮箱已复制到剪贴板！</span>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
